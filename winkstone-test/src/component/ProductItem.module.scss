@@ -1,0 +1,114 @@
+// 컬러팔레트
+$black-00: #000000;
+$white-00: #FFFFFF;
+$gray-00: #535353;
+$primary: #FA7300;
+$sora-00: #6284FF;
+$gray-10: #DDDDDD;
+$gray-20: #DDDEE1;
+$gray-30: #F0F1F1;
+$gray-40: #F9F9F9;
+$orange-00: #FA9B4A;
+$orange-10: #F9BD24;
+
+//공통버튼
+.button-line-primary {
+  display: inline-flex;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $primary;
+  color: $primary;
+}
+
+
+// 카드 레이아웃
+.product-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 314px;
+  height: 380px;
+  padding: 20px 18px;
+  border: 1px solid $gray-00;
+  border-radius: 10px;
+  background-color: $white-00;
+}
+
+//상품 탑 컨텐츠
+.top-area {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border: 1px solid $primary;
+  color: #000;
+  border-radius: 4px;
+}
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: $sora-00;
+  color: #fff;
+  border-radius: 4px;
+}
+
+//상품 바디 컨텐츠
+.product-title {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.product-info {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0 30px;
+
+}
+.data-view {
+  .label {
+    margin-bottom: 8px;
+  }
+  .value {
+    font-size: 18px;
+  }
+}
+
+//상품 바텀 컨텐츠
+.bottom-area {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid $gray-00;
+}
+
+// 프로그레스바
+.progress {
+  position: relative;
+  height: 10px;
+  margin: 20px 0;
+  border-radius: 4px;
+  background-color: $gray-40;
+  .inner {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(250,115,0,0) 0%, rgba(250,115,0,0.30033263305322133) 32%, rgba(250,115,0,1) 100%);
+  }
+  .value {
+    position: absolute;
+    right: 0;
+    top: -20px;
+    color: $primary;
+  }
+}
+

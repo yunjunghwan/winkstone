@@ -1,0 +1,32 @@
+$gray-20: #DDDEE1;
+
+//레이아웃
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 1920px;
+  height: 684px;
+  margin: 0 auto;
+  background-color: $gray-20;
+  @media screen and (max-width : 767px) {
+    width: auto;
+    height: auto;
+  }
+}
+
+.h2-title {
+  margin-bottom: 14px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.product-list {
+  display: flex;
+  gap: 10px;
+  @media screen and (max-width : 767px) {
+    flex-direction: column;
+  }
+}
